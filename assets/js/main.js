@@ -142,7 +142,7 @@ jQuery(document).ready(function ($) {
 
 
 //---------------------------------------------
-// Counter 
+// Counter
 //---------------------------------------------
 
     $('.statistic-counter').counterUp({
@@ -209,7 +209,7 @@ jQuery(document).ready(function ($) {
 //// options
 //        itemSelector: '.grid-item',
 //    });
-//    
+//
 
 
     $('.dropdown-menu').click(function (e) {
@@ -220,7 +220,24 @@ jQuery(document).ready(function ($) {
 
 });
 
-
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplaySpeed:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
 $(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
@@ -229,6 +246,3 @@ $(document).on("scroll", function () {
         $("nav").removeClass("small");
     }
 });
-
-
-

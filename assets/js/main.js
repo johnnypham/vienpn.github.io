@@ -221,11 +221,19 @@ jQuery(document).ready(function ($) {
 });
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
+    center: true,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    items:5,
+    dots:false,
     margin:10,
+    stopOnHover:false,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplaySpeed:true,
+    slideSpeed : 2000,
+    mouseDrag:false,
+    touchDrag:false,
+    loop:true,
     responsive:{
         0:{
             items:1
